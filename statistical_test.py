@@ -36,7 +36,7 @@ _, p_svm_tf = shapiro(svm_tf_f1_scores)
 
 print("SVM_WORD EMBEDDED VS NAIVE BAYES")
 if p_svm_we > 0.05 and p_nb > 0.05:
-    print("The data are normal -> We use Student's t-test")
+    print("The data are normal -> We use Paired t-test")
     t_stat, p_value = ttest_rel(svm_we_f1_scores, nb_f1_scores)
     print(f"t-statistic: {t_stat}, p-value: {p_value}")
 
@@ -52,7 +52,7 @@ print("\n\n --- \n\n")
 
 print("SVM_WORD EMDEDDED VS SVM_TERM FREQUENCY")
 if p_svm_we > 0.05 and p_svm_tf > 0.05:
-    print("The data are normal -> We use Student's t-test")
+    print("The data are normal -> We use Paired t-test")
     t_stat, p_value = ttest_rel(svm_we_f1_scores, nb_f1_scores)
     print(f"t-statistic: {t_stat}, p-value: {p_value}")
 
