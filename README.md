@@ -1,7 +1,7 @@
 # Bug Report Classification using SVM and FastText
 
 ## Project Overview
-This project aims to classify bug reports as performance or non-performance bugs using Support Vector Machines (SVM) and FastText embeddings. The dataset consists of bug reports from multiple machine learning frameworks, including TensorFlow, PyTorch, Keras, and Caffe.
+This project aims to classify bug reports as performance or non-performance bugs using Support Vector Machines (SVM) and FastText embeddings. The dataset consists of bug reports from multiple machine learning frameworks, including TensorFlow, PyTorch, Keras,Incubator-Mxnet and Caffe.
 
 ## Solution Approach
 We considered multiple models, including SVM and Random Forest, but selected SVM due to its better handling of structured data. Additionally, we incorporated FastText word embeddings to improve text representation, allowing for better classification performance.
