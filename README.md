@@ -39,7 +39,7 @@ We considered multiple models, including SVM and Random Forest, but selected SVM
 ├── requirements.pdf                # Project dependencies
 ├── manual.pdf                      # Project documentation
 ├── replication.pdf                 # Instruction to replicate results
-└── README.md                       # Project documentation
+└── README.md                       # Project Introduction
 ```
 
 
