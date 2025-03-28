@@ -32,39 +32,25 @@ We considered multiple models, including SVM and Random Forest, but selected SVM
 ├── statistical_test.py             # Statistical analysis
 ├── svm_tf_idf.py                   # SVM with TF-IDF features
 ├── svm_word_embeddings.py          # SVM with word embeddings
-├── *.csv                           # Performance results from various ML frameworks
+├── results_NB                      # Performance results from baseline
+├── results_SVM_TF                  # Performance results from SVM + TF-IDF
+├── results_SVM_WE                  # Performance results from SVM + FastText
+├── datasets                        # Datasets folder
+├── requirements.pdf                # Project dependencies
+├── manual.pdf                      # Project documentation
+├── replication.pdf                 # Instruction to replicate results
 └── README.md                       # Project documentation
 ```
 
-## Setup and Execution
-1. Install dependencies (fasttext optional as I had to download pre-trained manually):
-   ```bash
-   pip install numpy pandas scikit-learn fasttext
-   ```
-2. Run the baseline model (for every project):
-   ```bash
-   python baseline.py
-   ```
-3. Run the SVM model with TF-IDF (for every project):
-   ```bash
-   python svm_tf_idf.py
-   ```
-3. Execute SVM classification with word embeddings (for every project):
-   ```bash
-   python svm_word_embeddings.py
-   ```
-4. Run results_mean to obtain the results table that appears in the document
-   ```bash
-   python results_mean.py
-   ```
-5. Finally, check whether the baseline is beaten with the statistical test.
-   ```bash
-   python results_mean.py
-   ```
 
+## Instructions 
+Please check manual.pdf to follow setup and execution instructions.
+ 
 ## Authors
 - Mario Damas
 
 ## References
 - [1] FastText: https://fasttext.cc/docs/en/crawl-vectors.html
 - [2] Scikit-Learn: https://scikit-learn.org/
+
+
