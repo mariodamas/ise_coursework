@@ -44,7 +44,7 @@ We considered multiple models, including SVM and Random Forest, but selected SVM
 
 
 ## Instructions 
-Please check manual.pdf to follow setup and execution instructions.
+Please check manual.pdf or replication.pdf to follow setup and execution instructions.
  
 ## Authors
 - Mario Damas
