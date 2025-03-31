@@ -63,3 +63,19 @@ if p_svm_we > 0.05 and p_svm_tf > 0.05:
 
 else:
     print("The data are NOT normal")
+
+# Medians
+median_svm_we = np.median(svm_we_f1_scores) if svm_we_f1_scores else np.nan
+median_svm_tf = np.median(svm_tf_f1_scores) if svm_tf_f1_scores else np.nan
+median_nb = np.median(nb_f1_scores) if nb_f1_scores else np.nan
+
+medians = [
+    ("SVM_WORD EMBEDDED", median_svm_we),
+    ("SVM_TERM FREQUENCY", median_svm_tf),
+    ("Naive Bayes", median_nb),
+]
+
+medians_sorted = sorted(medians, key=lambda x: x[1], reverse=True)
+print("\n=== F1 Score Medians (Ordered) ===")
+for label, median in medians_sorted:
+    print(f"{label}: {median:.4f}")
